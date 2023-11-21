@@ -1,0 +1,17 @@
+{
+  "name": "module_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss input.css -o output.css",
+    "watch:css": "postcss input.css -o output.css --watch",
+    "build": "npm run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}

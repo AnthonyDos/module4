@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Module 4</title>
+</head>
+
+<body  class="w-full bg-gray-100 dark:bg-gray-800 dark:text-white ">
+    <div class="w-full flex justify-center py-8">
+        <button id="theme-toggle"
+            class="p-2 rounded-full text-white bg-slate-900  dark:text-slate-900 dark:bg-white">
+            Toggle theme
+        </button>
+    </div>
+    <div class="dark:bg-slate-900 dark:text-white">
+        <div class="flex justify-around my-3 w-auto max-w-lg mx-auto ">
+            <span class="material-icons dark:text-slate-900 bg-white rounded-full h-8 w-8 border flex items-center justify-center text-lg leading-none">
+                menu
+            </span>            
+            <div class="flex  bg-white rounded-full">
+                <input class="mx-3 text-lg font-bold" placeholder="Take The Quiz" />
+                <svg class="h-8 mr-2" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 256 256"
+                    enable-background="new 0 0 256 256" xml:space="preserve">
+                    <path fill="#000000"
+                        d="M128,10C62.8,10,10,62.8,10,128c0,65.2,52.8,118,118,118c65.2,0,118-52.8,118-118C246,62.8,193.2,10,128,10z M112.4,186.7c-11.9,11.9-31.2,11.9-43.1,0c-11.9-11.9-11.9-31.2,0-43.1L99.8,113c11.9-11.9,31.2-11.9,43.1,0c0.3,0.3,0.6,0.6,0.9,1c0.2,0.1,0.4,0.3,0.5,0.5c0.5,0.5,0.9,1,1.2,1.6c0,0,0.1,0.1,0.1,0.1l0,0c1.5,2.8,1,6.3-1.3,8.6c-2.3,2.3-5.9,2.8-8.6,1.3c-0.2,0.2-2.1-1.7-3.1-2.7l0,0c-6.2-6.2-16.2-6.3-22.4,0l-30.6,30.6c-6.2,6.2-6.2,16.3,0,22.5l0,0c6.2,6.2,16.3,6.2,22.5,0l18.4-18.4c6.4,3.1,13.9,3.2,20.3,0.3L112.4,186.7z M186.7,112.4L156.2,143c-11.9,11.9-31.2,11.9-43.1,0c-0.3-0.3-0.6-0.7-0.9-1c-0.2-0.1-0.4-0.3-0.5-0.5c-0.5-0.5-0.9-1-1.2-1.6c0,0-0.1-0.1-0.1-0.1l0,0c-1.5-2.8-1-6.3,1.3-8.6c2.3-2.3,5.9-2.8,8.6-1.3c0.2-0.2,2.1,1.7,3.1,2.7l0,0c6.2,6.2,16.2,6.3,22.4,0l30.6-30.6c6.2-6.2,6.2-16.3,0-22.5l0,0c-6.2-6.2-16.3-6.2-22.5,0L135.5,98c-6.4-3.1-13.9-3.2-20.3-0.3l28.4-28.4c11.9-11.9,31.2-11.9,43.1,0C198.6,81.2,198.6,100.5,186.7,112.4z" />
+                </svg>
+            </div>
+            <div class="flex w-8 h-8">
+                <img src="../assets/photo.png" alt="photo de profil"
+                    class="shadow rounded-full max-w-full h-auto align-middle border-none " />
+                <span class="material-icons rounded-full text-xs">
+                    add
+                </span>
+            </div>
+        </div>
+        <div class="w-80 mx-auto">
+            <h1 class="grid grid-cols-6">
+                <span class="col-span-4 text-5xl flex items-end">Simplify</span>
+                <span class="col-span-2 text-5xl flex items-end">your</span>
+                <span class="col-span-3 text-5xl flex items-end pt-4">health</span>
+                <span class="col-span-1 flex justify-center items-center rotate-45 pt-4">
+                    <svg viewBox="0 0 35.4113 67.2004" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10">
+                        <rect x="0.255737" y="0.52829" width="35.4113" height="67.2004" rx="17.7057" fill="#D9EAFD" />
+                    </svg>
+                </span>
+                <span class="col-span-2 text-5xl pt-4">and</span>
+                <span class="col-span-4 text-5xl pt-4">wellbeing.</span>
+                <span class="col-span-2 flex justify-center items-end pb-2 pt-4">
+                    <svg viewBox="0 0 70.7011 70.7011" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-14 w-14">
+                        <rect x="0.61084" y="30.7361" width="70.7011" height="9.79788" rx="4.89894" fill="#FEF189" />
+                        <rect x="40.8604" y="0.533691" width="70.7011" height="9.79788" rx="4.89894"
+                            transform="rotate(90 40.8604 0.533691)" fill="#FEF189" />
+                        <rect x="15.977" y="15.8999" width="39.9687" height="39.9687" rx="19.9844" fill="#FEF189" />
+                    </svg>
+                </span>
+            </h1>
+        </div>
+        <div class="bg-white flex flex-col mx-auto rounded" style="width: 298px;">
+            <div class="flex justify-between m-2 align-middle">
+                <div class="flex justify-between m-5 align-middle">
+                    <div class="flex justify-between w-24 mr-2">
+                        <div class="flex w-56 rounded-full border text-center border-gray-300">
+                            <p class="font-bold order-1 flex items-center dark:text-slate-900 bg-white ml-4">
+                                About
+                            </p>
+                            <p class="text-xs order-2 mt-2 ml-1 dark:text-slate-900 bg-white">01</p>
+                        </div>
+                    </div>
+                    <div class="order-2 flex items-center">
+                        <div class="rounded-full border p-2 dark:text-slate-900 bg-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="order-3 flex items-center">
+                    <span
+                        class="material-icons mr-2 rounded-full dark:text-slate-900 bg-white text-2xl border border-gray-400 h-16 w-16 flex items-center justify-center">
+                        add
+                    </span>
+                </a>
+            </div>
+            <div class="m-4 dark:text-slate-900 bg-white">
+                <p>Receive daily packs personalized</p>
+                <div class="flex">
+                    <p class="mr-2">to your</p>
+                    <p class="font-bold">unique health needs.</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img class="rounded-b-2xl" src="../assets/personne.jpg" alt="image personne" />
+                <div class="absolute bottom-14 left-4 transform text-black text-center">
+                    <div class="flex items-center justify-around bg-white rounded-full w-36 h-12">
+                        <svg fill="black" width="24px" height="24px" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg" class="mr-24 absolute">
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Trophy">
+                                    <path
+                                        d="M19.435,5.055h-.97c.01-.12.02-.24.02-.36a1.645,1.645,0,0,0-.45-1.18,1.462,1.462,0,0,0-1.05-.45H7.025a1.484,1.484,0,0,0-1.06.45,1.6,1.6,0,0,0-.44,1.18c0,.12.01.24.02.36h-.98a1.5,1.5,0,0,0-1.5,1.5v2a4.5,4.5,0,0,0,4.27,4.49c1.07,2.3,2.53,3.79,4.17,4.04v2.85h-4a.5.5,0,1,0,0,1h9a.5.5,0,0,0,0-1h-4v-2.85c1.64-.25,3.1-1.74,4.17-4.04a4.493,4.493,0,0,0,4.26-4.49v-2A1.5,1.5,0,0,0,19.435,5.055Zm-15.37,3.5v-2a.5.5,0,0,1,.5-.5h1.04a22.9,22.9,0,0,0,1.28,5.93A3.5,3.5,0,0,1,4.065,8.555Zm7.94,7.57c-2.82,0-5.23-5.04-5.48-11.47a.573.573,0,0,1,.16-.44.48.48,0,0,1,.34-.15h9.96a.442.442,0,0,1,.33.15.62.62,0,0,1,.17.44C17.235,11.085,14.825,16.125,12.005,16.125Zm7.93-7.57a3.508,3.508,0,0,1-2.8,3.42,23.353,23.353,0,0,0,1.27-5.92h1.03a.5.5,0,0,1,.5.5Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                            class="absolute">
+                            <path
+                                d="M314-115q-104-48-169-145T80-479q0-26 2.5-51t8.5-49l-46 27-40-69 191-110 110 190-70 40-54-94q-11 27-16.5 56t-5.5 60q0 97 53 176.5T354-185l-40 70Zm306-485v-80h109q-46-57-111-88.5T480-800q-55 0-104 17t-90 48l-40-70q50-35 109-55t125-20q79 0 151 29.5T760-765v-55h80v220H620ZM594 0 403-110l110-190 69 40-57 98q118-17 196.5-107T800-480q0-11-.5-20.5T797-520h81q1 10 1.5 19.5t.5 20.5q0 135-80.5 241.5T590-95l44 26-40 69Z" />
+                        </svg>
+                        <span class="material-icons ml-24 relative">
+                            nest_eco_leaf
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button
+            class="flex items-center justify-between mx-auto h-16 w-96 bg-black text-white rounded-full py-2 px-8 mt-3 mb-6">
+            <div class="flex w-56">
+                <p class="mr-2">Unlock </p>
+                <p class="font-bold mr-2">personalized </p>
+                <p>plan.</p>
+            </div>
+            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="ml-2">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </g>
+            </svg>
+        </button>
+
+    </div>
+    <script>
+        const btn = document.getElementById("theme-toggle");
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+</body>
+
+</html>
